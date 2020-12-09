@@ -8,6 +8,14 @@ const { useState } = React;
 export default function Home() {
   const [count, setCounter] = useState(0);
 
+  const increaseCount = () => {
+    setCounter(count + 1);
+  };
+
+  const decreaseCount = () => {
+    count > 0 ? setCounter(count - 1) : null;
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -19,8 +27,8 @@ export default function Home() {
         <h1>Counter App</h1>
         <h2>{count}</h2>
         <div>
-          <button>Increase</button>
-          <button>Decrease</button>
+          <button onClick={increaseCount}>Increase</button>
+          <button onClick={decreaseCount}>Decrease</button>
         </div>
       </main>
     </div>
