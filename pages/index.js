@@ -6,6 +6,8 @@ import styles from '../styles/Home.module.css';
 const { useState } = React;
 
 export default function Home() {
+  const [count, setCounter] = useState(0);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,6 +17,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Counter App</h1>
+        <h2>{count}</h2>
         <div>
           <button>Increase</button>
           <button>Decrease</button>
