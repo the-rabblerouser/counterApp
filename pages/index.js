@@ -1,5 +1,9 @@
+import * as React from 'react';
+
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+
+const { useState } = React;
 
 export default function Home() {
   return (
