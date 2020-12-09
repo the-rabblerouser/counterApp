@@ -24,13 +24,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>Counter App</h1>
-        <h2>{count}</h2>
-        <div>
-          <button onClick={increaseCount}>Increase</button>
-          <button onClick={decreaseCount}>Decrease</button>
+        <h1 className={styles.title}>Counter</h1>
+        <h2 className={styles.count}>{count}</h2>
+        <div className={styles.buttons}>
+          <button className={styles.button} onClick={increaseCount}>Increase</button>
+          <button className={styles.button} onClick={decreaseCount}>Decrease</button>
         </div>
       </main>
-    </div>
+    </div >
   );
 }
