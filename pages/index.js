@@ -11,6 +11,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Counter App</h1>
+        <div>
+          <button>Increase</button>
+          <button>Decrease</button>
+        </div>
       </main>
     </div>
   );
