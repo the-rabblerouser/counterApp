@@ -22,9 +22,9 @@ export default function Home() {
         <title>Counter App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <>  <h1 className={styles.title}>Counter</h1> </>
       <main className={styles.main}>
-        <h1 className={styles.title}>Counter</h1>
+
         <h2 className={styles.count}>{count}</h2>
         <div className={styles.buttons}>
           <button className={styles.button} onClick={increaseCount}>Increase</button>
