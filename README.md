@@ -1,3 +1,3 @@
-#Counter App
+###Counter App
 
-### A simple counter app
+## A simple counter app
